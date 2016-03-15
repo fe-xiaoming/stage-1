@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item0, .item1, .item2, .item3 {
+    width: 150px;
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .item0, .item1, .item2 {
+    border: 1px solid #f00;
+  }
+
+  .item0 {
+    height: 120px;
+  }
+
+  .item1 {
+    height: 100px;
+  }
+
+  .item2 {
+    height: 40px;
+  }
+
+  .item3 {
+    height: 200px;
+    border: 1px solid #00f;
+  }
+  
+  @media (max-width: 640px) {
+    body {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .item3 {
+      order: -1;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div class="item0"></div>
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+</body>
+</html>
